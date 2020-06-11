@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Mapa</title>
+    <link rel="stylesheet" href="style.css ">
+    <link rel="shortcut icon" href="img/ikona.jpg">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a target=_blank href="https://pl.wikivoyage.org/wiki/Szanghaj">Podróże</a>
+        <a target=_blank href="https://fajnepodroze.pl/informacje-ciekawostki-szanghaj/">Ciekawostki</a>
+        <a target=_blank href="https://www.pojechana.pl/2015/01/atrakcje-szanghaju/">Atrakcje</a>
+    </div>
+
+    <div class="main">
+        <div id="menu" class="menu">
+            <div class="open">
+                <span onclick="openNav()" style="cursor: pointer;">&#9776;</span>
+            </div>
+            <div class="title">
+                <div class="szanghaj">
+                    <b>Szanghaj</b>
+                </div>
+                <div class="flaga">
+                    <a href="index.html"><img alt="flaga " class="obrazek" src="img/flaga.jpg "></img>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="topnav">
+            <a href="#ankieta">Ankieta</a>
+            <a href="#tabela">Tabela</a>
+            <a href="#lista">Lista</a>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873449.7819148405!2d120.91629749245475!3d31.22313380601164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b27040b1f53c33%3A0x295129423c364a1!2sSzanghaj%2C%20Chiny!5e0!3m2!1spl!2spl!4v1591873995240!5m2!1spl!2spl"
+            style="  display: block;margin-left: auto;margin-right: auto; width:59vw; height:33vw; margin-top: 2vw;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <h2 class="napis">W jakiej dzielnicy chciałbyś mieszkać?</h2>
+        <table id="ankieta" valign="top">
+            <tr>
+                <th>
+                    <input type="radio" id="django" name="film" value="film"><label for="django">New World</label>
+                </th>
+                <th>
+                    <input type="radio" id="father" name="film" value="film"><label for="father">People's Square</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="radio" id="forest" name="film" value="film"><label for="forest">Lujiazui</label>
+                </th>
+                <th>
+                    <input type="radio" id="mile" name="film" value="film"> <label for="mile">Zhongshan Park</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="radio" id="shaw" name="film" value="film"> <label for="shaw">Waitan</label>
+                </th>
+                <th>
+                    <input type="radio" id="book" name="film" value="film"> <label for="book">Gubei</label>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <input type="radio" id="film" name="film" value="film"><label for="film">Xujiahui</label>
+                </th>
+                <th>
+                    <input type="radio" id="other" name="film" value="other"> <label for="other">Nanjing</label>
+                </th>
+            </tr>
+        </table>
+        <form>
+            <label style="  display: block; margin-left: auto; margin-right: auto; width: 50vw; height: 3vw; " for="fname"><p style="  display: block; margin-left: auto; margin-right: auto; font-size: 2vw;">Imię</p></label>
+            <input style="  display: block; margin-left: auto; margin-right: auto; width: 15vw; height: 3vw; margin-top:1vw;" type="text" id="fname" name="fname">
+            <label style="  display: block; margin-left: auto; margin-right: auto; width: 50vw; height: 3vw; " for="lname "><p style=" display: block; margin-left: auto; margin-right: auto; font-size: 2vw;">Nazwisko</p></label>
+            <input style=" display: block; margin-left: auto; margin-right: auto; width:  15vw; height: 3vw; margin-top:1vw;" type="text " id="lname " name="lname ">
+        </form>
+        <textarea name="Komentarz " cols="50 " rows="10 ">Twoje miejsce na dodatkowe uwagi</textarea>
+        <select style=" font-size: 3vw; width: 60vw; height: 6vw; display: block; margin-left: auto; margin-right: auto; margin-top: 1vw;" name="Przeglądarka">
+            <option selected=""><p>Mężczyzna</p></option>
+            <option><p>Kobieta</p></option>
+            <option><p>Inne</p></option>
+            <option><p>Nie chcę podawać</p></option>
+
+        </select>
+        <input style=" display: block; margin-left: auto; margin-right: auto; margin-top: 1vw; width: 7vw; height: 3vw; font-size: 2.5vw; font-family: 'Gill Sans', 'Lato', sans-serif; " type="submit " value="Wyślij
+                " onclick="event.preventDefault();alert( 'Dziękujemy za odpowiedź'); ">
+        <table id="tabela" style="border-collapse: collapse; margin-top: 2vw; ">
+            <tr>
+                <th>Państwo</th>
+                <th>Chiny</th>
+
+            </tr>
+            <tr>
+                <td>Burmistrz</td>
+                <td>Han Zheng</td>
+
+            </tr>
+            <tr>
+                <td>Wysokość</td>
+                <td>4 m.n.p.n.</td>
+
+            </tr>
+            <tr>
+                <td>Nr kierunkowy</td>
+                <td>200000-202100</td>
+
+            </tr>
+            <tr>
+                <td>Kod pocztowy</td>
+                <td>Helen Bennett</td>
+
+            </tr>
+            <tr>
+                <td>Populacja</td>
+                <td>24 153 000</td>
+
+            </tr>
+            <tr>
+                <td>Gęstość zaludnienia</td>
+                <td>3809 os./km²</td>
+
+            </tr>
+        </table>
+        <h2 id="lista">Najpopularniejsze chińskie przysmaki</h2>
+
+        <ul>
+            <li>Mandaryńskie placki Dan Bing</li>
+            <li>Wieprzowina Moo Shu zawijana w placki</li>
+            <li>Aromatyczne tofu z warzywami z woka</li>
+            <li>Wieprzowina na ostro z orzechami nerkowca</li>
+            <li>Zupa z wołowiną i makaronem HONG SHAO NIU ROU MIAN</li>
+        </ul>
+        <h2>Przewodniczący Chińskiej Republiki Ludowej</h2>
+
+        <ol>
+            <li>Mao Zedong</li>
+            <li>Liu Shaoqi</li>
+            <li>Dong Biwu </li>
+            <li>Song Qingling</li>
+            <li>Dong Biwu</li>
+            <li>Zhu De</li>
+            <li>Ye Jianying</li>
+        </ol>
+        <a href="#menu"><img src="img/upbutton.png" id="fixedbutton"></a>
+        <div class="stopka ">
+            <p class="stopa ">Mateusz Zyskowski klasa 2tb</p>
+        </div>
+    </div>
+    <script type="text/javascript " src="script.js "></script>
+</body>
+
+</html>
